@@ -72,12 +72,7 @@ const HC3 = (props) => {
 
   //
   return (
-    <div
-      {...bind()}
-      onClick={() => navigate(card)}
-      className="hc3-main-2"
-      style={cardStyles.hc3main2}
-    >
+    <div {...bind()} className="hc3-main-2" style={cardStyles.hc3main2}>
       <div className="hc3-left" style={cardStyles.hc3Left}>
         <div onClick={() => handleCard(1)}>
           <img src={remind} alt="remind-later" />
@@ -88,7 +83,11 @@ const HC3 = (props) => {
           <h4>Dismiss Now</h4>
         </div>
       </div>
-      <div className="hc3-right" style={cardStyles.main}>
+      <div
+        className="hc3-right"
+        onClick={() => navigate(card)}
+        style={cardStyles.main}
+      >
         <div className="top-container">
           <div className="text">
             <h3>
