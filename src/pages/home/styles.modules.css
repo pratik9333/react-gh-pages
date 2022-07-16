@@ -1,0 +1,40 @@
+.loader-class{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.container{
+    background: #F7F6F3;
+    border-radius: 12px 12px 0px 0px;
+    padding-top: 24px;
+}
+
+.main{
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+
+.HC3-main, .HC9-main, .HC5-main , .HC6-main, .HC1-main{
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 10px;
+    
+}
+
+.HC5-main img{
+    width: 100%;
+    border-radius: 12px;
+}
+.HC9-main{
+    height: 195px;
+}
+
+.HC9-main img{
+    width: 100%;
+}

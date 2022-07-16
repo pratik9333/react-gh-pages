@@ -1,0 +1,19 @@
+.navbar-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px 15px 0px;
+}
+
+.navbar-main h1{
+    font-weight: 500;
+    font-size: 22.8917px;
+    line-height: 23px;
+    color: #4C5454;
+}
+
+.navbar-main img{
+    width: 21px;
+    height: 21px;
+    margin-bottom: 5px;
+}
