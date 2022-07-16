@@ -83,11 +83,7 @@ const HC3 = (props) => {
           <h4>Dismiss Now</h4>
         </div>
       </div>
-      <div
-        className="hc3-right"
-        onClick={() => navigate(card)}
-        style={cardStyles.main}
-      >
+      <div className="hc3-right" style={cardStyles.main}>
         <div className="top-container">
           <div className="text">
             <h3>
@@ -107,7 +103,7 @@ const HC3 = (props) => {
                 : card.description}
             </p>
           </div>
-          <div className="button">
+          <div className="button" onClick={() => navigate(card)}>
             <button style={cardStyles.button}>{card.cta[0].text}</button>
           </div>
         </div>
