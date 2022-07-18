@@ -1,6 +1,3 @@
-// helper functions
-import { navigate } from "../../components/cards/helpers";
-
 // components
 import HC3 from "../../components/cards/HC3";
 import HC1 from "../../components/cards/HC1";
@@ -24,11 +21,10 @@ export const switchCase = (cardName, arr) => {
         return <HC3 alt={cardName} cardDetails={cardDetails} />;
 
       case "HC9":
-        console.log(cardDetails.url);
         return (
           <img
             alt={cardName}
-            onClick={() => navigate(cardDetails)}
+            onClick={() => window.location.replace(cardDetails.url)}
             src={cardDetails.bg_image.image_url}
           />
         );
@@ -37,7 +33,7 @@ export const switchCase = (cardName, arr) => {
         return (
           <img
             alt={cardName}
-            onClick={() => navigate(cardDetails)}
+            onClick={() => window.location.replace(cardDetails.url)}
             src={cardDetails.bg_image.image_url}
           />
         );

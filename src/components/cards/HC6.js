@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 // helper functions
-import { constructText, navigate } from "./helpers";
+import { constructText } from "./helpers";
 
 // styles
 import "./styles.modules.css";
@@ -14,7 +14,11 @@ const HC6 = (props) => {
   };
 
   return (
-    <div className="hc6" onClick={() => navigate(card)} style={cardStyles.main}>
+    <div
+      className="hc6"
+      onClick={() => window.location.replace(card.url)}
+      style={cardStyles.main}
+    >
       <div className="left-container">
         <div className="logo">
           <img src={card.icon.image_url} alt="icon" />

@@ -11,8 +11,3 @@ export const constructText = (text, arr) => {
 
   return tex.join(" ");
 };
-
-export const navigate = (card) => {
-  console.log(card.url);
-  window.location.replace(card.url);
-};
