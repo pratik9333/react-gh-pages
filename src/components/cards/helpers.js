@@ -4,15 +4,14 @@ export const constructText = (text, arr) => {
 
   for (let i = 0; i < tex.length; i++) {
     if (tex[i] === "{}" || tex[i] === "{}!") {
-      tex[i] = arr[count].text;
+      tex[i] = (
+        <span style={{ color: arr[count].color }}>{arr[count].text}</span>
+      );
       count += 1;
+    } else {
+      tex[i] = <span>{tex[i]}</span>;
     }
   }
 
-  return tex.join(" ");
-};
-
-export const navigate = (card) => {
-  console.log(card.url);
-  window.location.replace(card.url);
+  return tex;
 };

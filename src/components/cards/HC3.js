@@ -5,7 +5,7 @@ import remind from "../../assets/images/Group 41.png";
 import dismiss from "../../assets/images/Subtract.png";
 
 // helper functions
-import { constructText, navigate } from "./helpers";
+import { constructText } from "./helpers";
 
 // external libraries
 import { useLongPress, LongPressDetectEvents } from "use-long-press";
@@ -20,7 +20,6 @@ const HC3 = (props) => {
   const [enabled] = useState(true);
 
   const callback = useCallback(() => {
-    console.log(!displayButton);
     setDisplayButton(true);
   }, []);
 
@@ -44,8 +43,7 @@ const HC3 = (props) => {
   const cardStyles = {
     main: {
       backgroundColor: card.bg_color ? card.bg_color : "#ffffff",
-      background: `url(${card.bg_image.image_url}) no-repeat center center/cover`,
-      width: "100%",
+      backgroundImage: `url(${card.bg_image.image_url})`,
     },
     hc3main2: { display: displayCard ? "flex" : "none" },
     hc3Left: { display: displayButton ? "flex" : "none" },
@@ -103,7 +101,10 @@ const HC3 = (props) => {
                 : card.description}
             </p>
           </div>
-          <div className="button" onClick={() => navigate(card)}>
+          <div
+            className="button"
+            onClick={() => window.location.replace(card.url)}
+          >
             <button style={cardStyles.button}>{card.cta[0].text}</button>
           </div>
         </div>

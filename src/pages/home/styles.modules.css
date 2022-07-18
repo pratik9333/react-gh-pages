@@ -24,7 +24,7 @@
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
-    gap: 10px;
+    gap: 18px;
     
 }
 
@@ -34,8 +34,13 @@
 }
 .HC9-main{
     height: 195px;
+    margin-top: 13px;
+    margin-bottom: 12px;
 }
 
-.HC9-main img{
-    width: 100%;
+
+@media screen and (min-width: 840px) {
+    .HC9-main {
+        justify-content: space-evenly;
+    }
 }
