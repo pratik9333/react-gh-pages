@@ -24,10 +24,17 @@
 
 .hc3-right {
     display: flex;
-    padding: 70px 0px;
+    padding: 0px 17px;
     flex-direction: column;
     border-radius: 12px;
+    justify-content: center;
     flex-shrink: 0;
+    height: 380px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    user-select: none;
 }
 
 .hc3-main-2{
@@ -37,6 +44,7 @@
     flex-shrink: 0;
     background-color: #ffffff;
     border-radius: 12px;
+
 }
 
 .hc3-left{
@@ -65,27 +73,40 @@
 }
 
 .hc3-left div img{
-    width: 17px;
+    width: 20px;
+    height: 20px;
 }
 
 .hc3-right .text h3 {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 30px;
     line-height: 35px;
-    margin-top: 89px;
+}
+
+.hc3-right .text h3 span{
+    margin-right: 6px;
 }
 
 .hc3-right .text p {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 16px;
     line-height: 18px;
 }
 
+.hc3-right .text p span{
+    margin-right: 6px;
+}
+
 
 .hc3-right .text {
-    padding: 0px 50px;
+    padding: 0px 18px;
+    margin-top: 125px;
 }
 
 .hc3-right .button {
-    padding: 0px 50px;
+    padding: 0px 18px;
 }
 
 .hc3-right .button button {
@@ -118,6 +139,7 @@
     height: 35px;
 }
 
+
 .left-container .text h3 {
     font-size: 16px;
     line-height: 14px;
@@ -125,29 +147,80 @@
     margin: 6px 0px;
 }
 
+.left-container .text h3 span {
+    margin-right: 3px;
+    font-weight: 800;
+}
+
 .left-container .text span {
-    font-weight: 400;
     font-size: 14px;
     line-height: 10px;
     color: #000000;
 }
 
+.left-container .text span span{
+    margin-right: 3px;
+    font-weight: 400;
+}
+
 /* media queries */
 
-@media screen and (min-width: 471px) {
-    .hc3-right .text h3 {
-        margin-top: 100px;
-    }
-}
-
-@media screen and (min-width: 527px) {
-    .hc3-right .text h3 {
+@media screen and (min-width: 399px) {
+    .hc3-right .text {
         margin-top: 140px;
     }
+    .hc3-right{
+        height: 400px;
+    }
 }
 
-@media screen and (min-width: 560px) {
-    .hc3-right .text h3 {
-        margin-top: 160px;
+@media screen and (min-width: 460px) {
+    .hc3-right .text {
+        margin-top: 170px;
+    }
+}
+
+@media screen and (min-width: 520px) {
+    .hc3-right .text {
+        margin-top: 180px;
+    }
+}
+
+@media screen and (min-width: 570px) {
+    .hc3-right .text {
+        margin-top: 210px;
+    }
+    .hc3-right{
+        height: 420px;
+    }
+}
+
+@media screen and (min-width: 666px) {
+    .hc3-right .text {
+        margin-top: 240px;
+    }
+
+    .hc3-right {
+        height: 460px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .hc3-right .text {
+        margin-top: 270px;
+    }
+
+    .hc3-right {
+        height: 460px;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    .hc3-right .text {
+        margin-top: 290px;
+    }
+
+    .hc3-right {
+        height: 490px;
     }
 }

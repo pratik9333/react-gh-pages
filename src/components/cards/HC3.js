@@ -43,8 +43,7 @@ const HC3 = (props) => {
   const cardStyles = {
     main: {
       backgroundColor: card.bg_color ? card.bg_color : "#ffffff",
-      background: `url(${card.bg_image.image_url}) no-repeat center center/cover`,
-      width: "100%",
+      backgroundImage: `url(${card.bg_image.image_url})`,
     },
     hc3main2: { display: displayCard ? "flex" : "none" },
     hc3Left: { display: displayButton ? "flex" : "none" },
